@@ -48,6 +48,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *remainingTimeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *fullscreenExpandButton;
 @property (weak, nonatomic) IBOutlet UIButton *fullscreenShrinkButton;
+@property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
 //
 
 + (NSBundle*)bundle;

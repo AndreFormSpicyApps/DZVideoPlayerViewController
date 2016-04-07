@@ -863,5 +863,8 @@ static const NSString *PlayerStatusContext;
         [self.delegate playerDoneButtonTouched];
     }
 }
+- (IBAction)volumeChanged:(UISlider *)slider {
+    self.player.volume = slider.value;
+}
 
 @end

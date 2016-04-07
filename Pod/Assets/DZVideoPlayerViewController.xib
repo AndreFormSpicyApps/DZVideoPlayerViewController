@@ -20,6 +20,7 @@
                 <outlet property="remainingTimeLabel" destination="YiH-9G-eQ4" id="FZ3-SS-2Jt"/>
                 <outlet property="topToolbarView" destination="OTK-4W-YjV" id="z5N-bX-sVT"/>
                 <outlet property="view" destination="iN0-l3-epB" id="5lv-e0-0dE"/>
+                <outlet property="volumeSlider" destination="Nyw-SB-Fxe" id="hau-ch-eah"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -179,11 +180,14 @@
                             </state>
                         </button>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nyw-SB-Fxe">
-                            <rect key="frame" x="64" y="7" width="522" height="31"/>
+                            <rect key="frame" x="64" y="7" width="518" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Cgj-ic-XLm"/>
-                                <constraint firstAttribute="width" constant="518" id="vnO-IM-ar8"/>
+                                <constraint firstAttribute="width" constant="514" id="vnO-IM-ar8"/>
                             </constraints>
+                            <connections>
+                                <action selector="volumeChanged:" destination="-1" eventType="valueChanged" id="sQ5-1L-3qw"/>
+                            </connections>
                         </slider>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zm-dn-EbA" userLabel="Pause Button" customClass="DZPlayerButton">
                             <rect key="frame" x="19" y="7" width="30" height="30"/>
@@ -220,6 +224,7 @@
                         <constraint firstItem="cfW-Si-xGK" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" id="4iS-ZP-KXf"/>
                         <constraint firstItem="ArK-79-Cut" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="76T-cn-dUf"/>
                         <constraint firstAttribute="bottom" secondItem="cfW-Si-xGK" secondAttribute="bottom" id="Bao-n8-oXz"/>
+                        <constraint firstItem="Nyw-SB-Fxe" firstAttribute="leading" secondItem="ArK-79-Cut" secondAttribute="trailing" constant="17" id="Cfg-4V-dtJ"/>
                         <constraint firstAttribute="bottom" secondItem="9zm-dn-EbA" secondAttribute="bottom" constant="7" id="FbJ-X1-4qE"/>
                         <constraint firstItem="KjX-5t-jdJ" firstAttribute="top" secondItem="Ba7-Io-2c5" secondAttribute="top" id="NdQ-Ll-Aoe"/>
                         <constraint firstItem="KjX-5t-jdJ" firstAttribute="leading" secondItem="Ba7-Io-2c5" secondAttribute="leading" id="Wb8-Ao-elL"/>
@@ -229,7 +234,7 @@
                         <constraint firstItem="Nyw-SB-Fxe" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="fZ8-ed-TM5"/>
                         <constraint firstAttribute="bottom" secondItem="ArK-79-Cut" secondAttribute="bottom" constant="7" id="hZp-Ui-y8j"/>
                         <constraint firstItem="9zm-dn-EbA" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="ivi-iG-081"/>
-                        <constraint firstAttribute="trailing" secondItem="Nyw-SB-Fxe" secondAttribute="trailing" constant="16" id="kZI-3x-Bnl"/>
+                        <constraint firstAttribute="trailing" secondItem="Nyw-SB-Fxe" secondAttribute="trailing" constant="20" id="kZI-3x-Bnl"/>
                         <constraint firstItem="ArK-79-Cut" firstAttribute="leading" secondItem="Omr-8F-wN5" secondAttribute="leading" constant="19" id="oyK-Sn-0Y4"/>
                         <constraint firstItem="9zm-dn-EbA" firstAttribute="leading" secondItem="Omr-8F-wN5" secondAttribute="leading" constant="19" id="vgD-qo-59q"/>
                         <constraint firstAttribute="bottom" secondItem="Ba7-Io-2c5" secondAttribute="bottom" constant="7" id="xmG-NU-cQg"/>

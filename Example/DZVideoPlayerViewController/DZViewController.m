@@ -3,7 +3,7 @@
 //  DZVideoPlayerViewController
 //
 //  Created by Denis Zamataev on 06/03/2015.
-//  Copyright (c) 2014 Denis Zamataev. All rights reserved.
+//  Copyright (c) 2014 Denis Zamataev. All rights reserved..
 //
 
 #import "DZViewController.h"

@@ -866,5 +866,16 @@ static const NSString *PlayerStatusContext;
 - (IBAction)volumeChanged:(UISlider *)slider {
     self.player.volume = slider.value;
 }
+- (IBAction)volumeHi:(id)sender {
+    self.player.volume = 1;
+    self.volumeSlider.value = 1;
+}
+- (IBAction)volumeOff:(id)sender {
+    self.player.volume = 0;
+    self.volumeSlider.value = 0;
+}
+
+
+
 
 @end

@@ -180,7 +180,7 @@
                             </state>
                         </button>
                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nyw-SB-Fxe">
-                            <rect key="frame" x="124" y="7" width="420" height="31"/>
+                            <rect key="frame" x="127" y="7" width="417" height="31"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Cgj-ic-XLm"/>
                             </constraints>
@@ -228,6 +228,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="volumeHi:" destination="-1" eventType="touchUpInside" id="9Ip-R7-q8K"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPs-dB-FQo" userLabel="Volume Low Button" customClass="DZPlayerButton">
                             <rect key="frame" x="92" y="7" width="30" height="30"/>
@@ -241,6 +244,9 @@
                             <state key="highlighted">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="volumeOff:" destination="-1" eventType="touchUpInside" id="OjT-Ql-ahs"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -261,7 +267,7 @@
                         <constraint firstItem="VPs-dB-FQo" firstAttribute="leading" secondItem="ArK-79-Cut" secondAttribute="trailing" constant="43" id="aZX-bo-IZx"/>
                         <constraint firstItem="Ba7-Io-2c5" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="b0y-MC-HkV"/>
                         <constraint firstItem="ArK-79-Cut" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="chb-Sa-hXz"/>
-                        <constraint firstItem="Nyw-SB-Fxe" firstAttribute="leading" secondItem="VPs-dB-FQo" secondAttribute="trailing" constant="4" id="fhn-Sq-Iv4"/>
+                        <constraint firstItem="Nyw-SB-Fxe" firstAttribute="leading" secondItem="VPs-dB-FQo" secondAttribute="trailing" constant="7" id="fhn-Sq-Iv4"/>
                         <constraint firstItem="9zm-dn-EbA" firstAttribute="top" secondItem="Omr-8F-wN5" secondAttribute="top" constant="7" id="lXx-t8-pmn"/>
                         <constraint firstAttribute="bottom" secondItem="VPs-dB-FQo" secondAttribute="bottom" constant="7" id="qiS-ix-pSO"/>
                         <constraint firstAttribute="height" constant="44" id="rOC-Y7-Cny"/>

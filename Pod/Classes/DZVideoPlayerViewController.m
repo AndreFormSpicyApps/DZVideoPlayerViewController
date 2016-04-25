@@ -427,7 +427,13 @@ static const NSString *PlayerStatusContext;
         [self.progressIndicator setValue:(current / duration)];
         [self.progressIndicator setSecondaryValue:([self availableDuration] / duration)];
         
+        //spicyapps modification to prevent video running to end
+        if (current > (duration - 1.5))
+            [self pause];
+
+        
         // Set time labels
+        
         
         NSString *currentTimeString = current > 0 ? [self stringFromTimeInterval:current] : @"00:00";
         NSString *remainingTimeString = left > 0 ? [self stringFromTimeInterval:left] : @"00:00";

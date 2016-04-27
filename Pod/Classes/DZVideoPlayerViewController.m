@@ -711,8 +711,11 @@ static const NSString *PlayerStatusContext;
 }
 
 - (void)handleAVPlayerItemPlaybackStalled:(NSNotification *)notification {
-    [self pause];
-    [self.activityIndicatorView startAnimating];
+    
+    //spicyapps modification to prevent video from stoping when seeking.
+    if (! self.isPlaying)
+        [self play];
+    //[self.activityIndicatorView startAnimating];
     [self onPlaybackStalled];
 }
 
